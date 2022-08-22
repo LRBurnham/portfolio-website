@@ -95,7 +95,11 @@ div.copyright {
 
 /* Portfolio Carousel */
 
-.carousel-label {
+.carousel {
+  padding: 20px 0px;
+}
+
+.carousel-item {
   text-align: center;
 }
 
