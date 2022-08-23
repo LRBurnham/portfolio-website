@@ -67,14 +67,20 @@ div.copyright {
   max-width: 80%;
   display: block;
   float: right;
-  padding: 20px 0px 20px 20px;
+  padding: 20px 0px 0px 20px;
   background: #222831;
   color: #fff;
+  font-size: 1.1rem;
 }
 
 .lighter-section {
   background: #393e46;
   color: #fff;
+}
+
+.section-heading {
+  text-align: center;
+  font-weight: 700;
 }
 
 /* Intro Section */
@@ -97,10 +103,34 @@ div.copyright {
 
 .carousel {
   padding: 20px 0px;
+  margin: 20px 0px;
 }
 
 .carousel-item {
   text-align: center;
+  min-height: 400px;
+}
+
+.carousel-label {
+  font-weight: 600;
+  padding: 1% 15% 1% 15%;
+}
+
+.carousel-subtitle {
+  font-weight: 500;
+  padding: 0% 15% 1% 15%;
+}
+
+A:hover .carousel-logo-default {
+   display: none;
+}
+
+A .carousel-logo-hover {
+   display:none;
+}
+
+A:hover .carousel-logo-hover {
+   display:inline;
 }
 
 /* Clearfix */

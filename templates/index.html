@@ -8,29 +8,46 @@
   </section>
 
 <!--  TODO: Add images to carousel items-->
-<!--  TODO: Incorporate different text positions based on mobile vs desktop-->
-  <section class="lighter-section">
+<!--  Tech list desktop only on carousel-->
+  <section id="portfolio" class="lighter-section">
     <div class="carousel slide" id="portfolio-carousel" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <h2 class="carousel-label">Things I've Worked On</h2>
+          <h1 class="carousel-label">Things I've Worked On</h1>
+          <h5 class="carousel-subtitle">
+            Here are some very brief highlights of my work.
+            Clicking on the icons will take you to the matching entry on my portfolio page.
+            The icon below will let you start right at the top.
+          </h5>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h2 class="carousel-label">Highlight #1</h2>
+          <h1 class="carousel-label">Highlight #1</h1>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h2 class="carousel-label">Highlight #2</h2>
+          <h1 class="carousel-label">Highlight #2</h1>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h2 class="carousel-label">Highlight #3</h2>
+          <h1 class="carousel-label">This Site</h1>
+          <h5 class="carousel-subtitle">
+            The first website I've ever built without a direct guide or template to follow.
+            My goal was to present a cozy mobile first experience with minimal sacrifice on the desktop experience.
+          </h5>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h2 class="carousel-label">My GitHub</h2>
-          <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
+          <h1 class="carousel-label">My GitHub</h1>
+          <h5 class="carousel-subtitle">
+            My GitHub is home to most of my work.
+            It's the best way to get a full view into my progress as a developer.
+            The logo below can take you there, you can even find the repository for this site!
+          </h5>
+          <a href="https://github.com/LRBurnham">
+            <img src="{{ url_for('static', filename = 'img/github-logo.png') }}" class="carousel-logo-default" alt="GitHub logo white">
+            <img src="{{ url_for('static', filename = 'img/github-logo-blue.png') }}" class="carousel-logo-hover" alt="GitHub logo blue">
+          </a>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#portfolio-carousel" data-bs-slide="prev">
@@ -44,39 +61,33 @@
     </div>
   </section>
 
-  <p>content</p>
-  <h1>big content</h1>
-  <ul>
-    <li>
-      list content
-    </li>
-    <li>
-      list content
-    </li>
-    <li>
-      list content
-    </li>
-    <li>
-      list content
-    </li>
-    <li>
-      list content
-    </li>
-    <li>
-      list content
-    </li>
-  </ul>
-  <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget urna dolor. Aliquam eleifend diam quis dui fermentum molestie. Curabitur feugiat commodo porta. Donec accumsan ex sit amet odio finibus aliquam. Sed eu orci sit amet odio ornare ultrices id nec lorem. Sed vitae sodales sem. Donec et ligula ac velit dignissim congue. Duis malesuada ligula vitae faucibus mollis.
+  <section id="about-me">
+    <div class="container-fluid">
+      <h2 class="section-heading">Who am I?</h2>
 
-Duis tortor elit, ultricies in luctus in, luctus id augue. Ut id nisl nec nunc sollicitudin viverra. Maecenas eget ipsum nec turpis vestibulum vestibulum sit amet in eros. Integer ut dui dapibus, malesuada nisl nec, pellentesque risus. Proin sollicitudin sollicitudin condimentum. Donec vehicula et velit et egestas. Nam velit ante, fermentum sit amet pellentesque nec, volutpat eget mi. Proin sed ipsum eu mauris luctus maximus at ac lectus.
+      <div class="row">
+        <div class="col-lg-8">
+          <p>I am a business student turned developer, primarily wielding Python to bring projects to life.</p>
+          <p>After taking </p>
+        </div>
+        <div class="col-lg-4" ><p>This is a test to see what the col lg 4 will do given our current layout</p></div>
+      </div>
 
-Suspendisse semper pulvinar sapien, nec tincidunt dui. Proin accumsan tempus vestibulum. Ut tempor scelerisque dolor, in mollis felis dapibus eget. Etiam luctus aliquet porta. Ut egestas ac augue quis consectetur. Duis eleifend finibus odio, non aliquam enim scelerisque sed. Proin vulputate, metus id faucibus molestie, diam urna euismod mi, ac mollis arcu quam id sapien. Mauris vestibulum nunc non urna laoreet luctus. Integer cursus, ligula id posuere dictum, sapien enim scelerisque tortor, nec elementum mi est at lectus. Vivamus molestie placerat auctor. Nunc luctus scelerisque justo eget egestas.
+      <div class="row">
+        <div class="col-lg-8"><p>This is a test to see what the col lg 8 will do given our current layout</p></div>
+        <div class="col-lg-4"><p>This is a test to see what the col lg 4 will do given our current layout</p></div>
+      </div>
 
-Aenean non tortor vestibulum, placerat ante vel, dictum neque. Phasellus maximus urna eget tristique feugiat. Sed at risus vel lacus consequat tincidunt vel sit amet ipsum. Duis vestibulum dapibus eleifend. Nunc placerat interdum pellentesque. Praesent elementum, arcu sed pharetra blandit, elit nibh tristique lectus, pulvinar imperdiet nisi tortor vitae ante. Aliquam iaculis, sapien nec maximus laoreet, nunc odio mollis lacus, at pulvinar mi lectus eu nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </div>
+  </section>
 
-Proin tellus ipsum, aliquam vitae suscipit volutpat, fermentum non metus. In hac habitasse platea dictumst. Pellentesque nec quam vitae mi mattis aliquet. Nunc tortor libero, imperdiet ac gravida sed, tincidunt ut neque. Nam sapien libero, maximus vel arcu vel, tincidunt imperdiet erat. Sed aliquet a neque nec gravida. Phasellus feugiat in augue in faucibus. Proin imperdiet elit congue diam venenatis, eget eleifend diam hendrerit. Cras vestibulum sapien eget arcu aliquam, vitae consectetur ipsum mollis. Vivamus id enim vitae velit condimentum maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-  </p>
+  <section id="contact" class="lighter-section">
+
+    <h2>Get in Touch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc faucibus a pellentesque sit amet porttitor eget. Pulvinar etiam non quam lacus suspendisse. Ornare suspendisse sed nisi lacus. Nibh cras pulvinar mattis nunc sed blandit libero. Urna molestie at elementum eu facilisis sed. Habitant morbi tristique senectus et netus et. Lorem sed risus ultricies tristique nulla aliquet enim tortor at. Risus in hendrerit gravida rutrum. Sed enim ut sem viverra aliquet eget sit amet tellus. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Purus faucibus ornare suspendisse sed nisi lacus sed. Varius vel pharetra vel turpis nunc eget lorem. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Mauris in aliquam sem fringilla ut morbi tincidunt. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Lacus viverra vitae congue eu consequat ac felis donec et. Leo duis ut diam quam nulla porttitor. Mi tempus imperdiet nulla malesuada.</p>
+
+  </section>
+
 </div>
 
 {% include "footer.html" %}
