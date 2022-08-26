@@ -90,6 +90,22 @@ div.copyright {
   padding: 20px 0px;
 }
 
+.intro-container {
+  position: relative;
+}
+
+#laptop-outline {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+#intro-text {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #intro-title {
   font-size: 4rem;
   font-weight: 100;
