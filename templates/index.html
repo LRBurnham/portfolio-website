@@ -7,7 +7,7 @@
       <img src="{{ url_for('static', filename='img/banner-laptop.png') }}" alt='Laptop Outline' id="laptop-outline">
       <div id="intro-text">
         <h1 id="intro-title">LR Burnham</h1>
-        <h3 class="subtitle">{ i write code }</h3>
+        <h3 id="intro-subtitle">{ i write code }</h3>
       </div>
     </div>
   </section>
@@ -18,7 +18,7 @@
     <div class="carousel slide" id="portfolio-carousel" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <h1 class="carousel-label">Things I've Worked On</h1>
+          <h1 class="carousel-label section-heading">Things I've Worked On</h1>
           <h5 class="carousel-subtitle">
             Here are some very brief highlights of my work.
             Clicking on the icons will take you to the matching entry on my portfolio page.
@@ -27,15 +27,15 @@
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h1 class="carousel-label">Highlight #1</h1>
+          <h1 class="carousel-label section-heading">Highlight #1</h1>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h1 class="carousel-label">Highlight #2</h1>
+          <h1 class="carousel-label section-heading">Highlight #2</h1>
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h1 class="carousel-label">This Site</h1>
+          <h1 class="carousel-label section-heading">This Site</h1>
           <h5 class="carousel-subtitle">
             The first website I've ever built without a direct guide or template to follow.
             My goal was to present a cozy mobile first experience with minimal sacrifice on the desktop experience.
@@ -43,7 +43,7 @@
           <img src="{{ url_for('static', filename = 'img/placeholder-200x200.jpg') }}" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="10000">
-          <h1 class="carousel-label">My GitHub</h1>
+          <h1 class="carousel-label section-heading">My GitHub</h1>
           <h5 class="carousel-subtitle">
             My GitHub is home to most of my work.
             It's the best way to get a full view into my progress as a developer.
@@ -68,19 +68,67 @@
 
   <section id="about-me">
     <div class="container-fluid">
-      <h2 class="section-heading">Who am I?</h2>
+      <h1 class="section-heading">Who am I?</h1>
 
-      <div class="row">
-        <div class="col-lg-8">
-          <p>I am a business student turned developer, primarily wielding Python to bring projects to life.</p>
-          <p>After taking </p>
+      <div class="row about-me-row">
+        <div class="col-lg-8 about-me-text">
+          <p>
+            Hi there! I am a blossoming developer currently wielding Python as my primary tool to bring ideas to life.
+            I found a passion learning and using new technologies, which is what lead me down the path to become a developer.
+          </p>
+          <p>
+            I hold a Bachelor of Science in business administration, and try to always apply the lessons I've learned to a customer/user-first approach to creation.
+          </p>
         </div>
-        <div class="col-lg-4" ><p>This is a test to see what the col lg 4 will do given our current layout</p></div>
+        <div class="col-lg-4 about-me-image">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8"><p>This is a test to see what the col lg 8 will do given our current layout</p></div>
-        <div class="col-lg-4"><p>This is a test to see what the col lg 4 will do given our current layout</p></div>
+      <div class="row about-me-row">
+        <div class="col-lg-4 about-me-image">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
+        <div class="col-lg-8 about-me-text">
+          <p>
+            Python is my most comfortable language, but I am working to expand my range.
+            I have experience in various libraries and frameworks including but not limited to: Flask, Requests, Selenium, SciKit, NumPy, Pandas, Matplotlib, Tkinter among others with even more to learn!
+          </p>
+          <p>
+            Developing for web has been a strong growing interest of mine, for this site for example I wrote the HTML, CSS and implemented Bootstrap for functionality.
+          </p>
+        </div>
+      </div>
+
+      <div class="row about-me-row">
+        <div class="col-lg-8 about-me-text">
+          <p>
+            My goals as a developer and as a human are to learn new skills every day or build on the one's that I already have.
+            If a role or a project requires me to learn new technologies or even entirely new languages I am excited for the opportunity.
+          </p>
+          <p>
+            My approach to development, education and life is to try not to reinvent the wheel when I could be just making a better wheel.
+          </p>
+        </div>
+        <div class="col-lg-4 about-me-image">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
+      </div>
+
+      <div class="row about-me-row">
+        <div class="col-lg-4 about-me-image">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
+        <div class="col-lg-8 about-me-text">
+          <p>
+            Although computers are binary, I am not (she/they pronouns please and thank you)!
+            You can call me Lily, L.R. or just L, I am more than happy with whichever you prefer.
+          </p>
+          <p>
+            Much of my free-time lately has been devoted to learning but when I'm not tackling a new skill I mostly enjoy gaming.
+            Tabletop games like Magic the Gathering and MMOs like OSRS, WoW and FFXIV are among my favorites.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -88,7 +136,7 @@
 
   <section id="contact" class="lighter-section">
 
-    <h2>Get in Touch</h2>
+    <h1 class="section-heading">Get in Touch</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc faucibus a pellentesque sit amet porttitor eget. Pulvinar etiam non quam lacus suspendisse. Ornare suspendisse sed nisi lacus. Nibh cras pulvinar mattis nunc sed blandit libero. Urna molestie at elementum eu facilisis sed. Habitant morbi tristique senectus et netus et. Lorem sed risus ultricies tristique nulla aliquet enim tortor at. Risus in hendrerit gravida rutrum. Sed enim ut sem viverra aliquet eget sit amet tellus. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Purus faucibus ornare suspendisse sed nisi lacus sed. Varius vel pharetra vel turpis nunc eget lorem. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Mauris in aliquam sem fringilla ut morbi tincidunt. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Lacus viverra vitae congue eu consequat ac felis donec et. Leo duis ut diam quam nulla porttitor. Mi tempus imperdiet nulla malesuada.</p>
 
   </section>
