@@ -166,6 +166,10 @@ A:hover .carousel-logo-hover {
   text-align: center;
 }
 
+.about-image-top {
+  display: none;
+}
+
 /* Clearfix */
 
 .clearfix::after {
@@ -206,6 +210,20 @@ A:hover .carousel-logo-hover {
     max-width: 100%;
     padding: 20px 0px;
     float: none;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  /* About Me */
+
+  .about-image-top {
+    display: block;
+  }
+
+  .about-image-right{
+    display: none;
   }
 
 }

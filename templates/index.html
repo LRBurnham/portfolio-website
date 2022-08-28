@@ -13,7 +13,6 @@
   </section>
 
 <!--  TODO: Add images to carousel items-->
-<!--  Tech list desktop only on carousel-->
   <section id="portfolio" class="lighter-section">
     <div class="carousel slide" id="portfolio-carousel" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -71,6 +70,9 @@
       <h1 class="section-heading">Who am I?</h1>
 
       <div class="row about-me-row">
+        <div class="col-lg-4 about-me-image about-image-top">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
         <div class="col-lg-8 about-me-text">
           <p>
             Hi there! I am a blossoming developer currently wielding Python as my primary tool to bring ideas to life.
@@ -80,7 +82,7 @@
             I hold a Bachelor of Science in business administration, and try to always apply the lessons I've learned to a customer/user-first approach to creation.
           </p>
         </div>
-        <div class="col-lg-4 about-me-image">
+        <div class="col-lg-4 about-me-image about-image-right">
           <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
         </div>
       </div>
@@ -101,6 +103,9 @@
       </div>
 
       <div class="row about-me-row">
+        <div class="col-lg-4 about-me-image about-image-top">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
         <div class="col-lg-8 about-me-text">
           <p>
             My goals as a developer and as a human are to learn new skills every day or build on the one's that I already have.
@@ -110,7 +115,7 @@
             My approach to development, education and life is to try not to reinvent the wheel when I could be just making a better wheel.
           </p>
         </div>
-        <div class="col-lg-4 about-me-image">
+        <div class="col-lg-4 about-me-image about-image-right">
           <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
         </div>
       </div>
