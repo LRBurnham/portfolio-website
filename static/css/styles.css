@@ -7,7 +7,7 @@
 /* Header and Navigation */
 
 #header {
-  max-width: 20%;
+  width: 20%;
   height: 100%;
   position: fixed;
   float: left;
@@ -206,6 +206,25 @@ A:hover .carousel-logo-hover {
     max-width: 100%;
     padding: 20px 0px;
     float: none;
+  }
+
+}
+
+/* Larger Screen Adjustments */
+
+@media only screen and (min-width: 1750px) {
+
+  /* Header and Navigation */
+
+  #header {
+    width: 15%;
+  }
+
+  /* Content */
+
+   #main-content {
+    width: 85%;
+    max-width: 85%;
   }
 
 }

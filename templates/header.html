@@ -29,9 +29,11 @@
       <!-- Vertical Navigation -->
       <nav class="navbar navbar-dark vertical-nav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img id="vertical-logo" src="{{ url_for('static', filename = 'img/square-logo.png') }}" alt="LR Logo">
-          </a>
+          <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+              <img id="vertical-logo" src="{{ url_for('static', filename = 'img/square-logo.png') }}" alt="LR Logo">
+            </a>
+          </div>
           <div id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
