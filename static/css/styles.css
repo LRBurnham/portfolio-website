@@ -171,6 +171,17 @@ A:hover .carousel-logo-hover {
   display: none;
 }
 
+/* Contact */
+
+#contact {
+  text-align: center;
+  padding: 2% 15%;
+}
+
+.below-contact {
+  display: none;
+}
+
 /* Clearfix */
 
 .clearfix::after {
@@ -181,7 +192,7 @@ A:hover .carousel-logo-hover {
 
 /* Smaller Screen Layout and Styling Adjustments */
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
   /* Header and Navigation */
 
@@ -215,6 +226,15 @@ A:hover .carousel-logo-hover {
 
   footer {
     background-color: #222831;
+  }
+
+  /* Contact */
+  .left-contact {
+    display: none;
+  }
+
+  .below-contact {
+    display: inline;
   }
 
 }
