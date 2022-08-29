@@ -31,6 +31,14 @@
   color: #00adB5;
 }
 
+.dropdown-menu {
+  background-color: #222831;
+}
+
+.dropdown-item {
+  color: #eee;
+}
+
 .horizontal-nav {
   display: none;
 }
@@ -197,6 +205,9 @@ A:hover .carousel-logo-hover {
   color: #00adb5;
 }
 
+footer {
+  display: none;
+}
 
 /* Clearfix */
 
@@ -251,6 +262,12 @@ A:hover .carousel-logo-hover {
 
   .below-contact {
     display: inline;
+  }
+
+  /* Footer */
+
+  footer {
+    display: block;
   }
 
 }
