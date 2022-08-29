@@ -182,6 +182,22 @@ A:hover .carousel-logo-hover {
   display: none;
 }
 
+.contact-input {
+  width: 65%;
+  background-color: #222831;
+  color: #eee;
+}
+
+.contact-button {
+  background-color: #222831;
+  color: #eee;
+}
+
+.contact-button:hover {
+  color: #00adb5;
+}
+
+
 /* Clearfix */
 
 .clearfix::after {
@@ -249,6 +265,16 @@ A:hover .carousel-logo-hover {
 
   .about-image-right{
     display: none;
+  }
+
+  /* Contact */
+
+  .contact-input {
+    width: 85%;
+  }
+
+  .test-class {
+    align: left;
   }
 
 }

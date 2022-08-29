@@ -13,13 +13,13 @@ Bootstrap(app)
 
 
 class ContactForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    email = EmailField('Email', validators=[DataRequired(), Email()])
-    message = TextAreaField('Message', validators=[DataRequired()])
+    name = StringField('Name', validators=[DataRequired()], render_kw={"placeholder": "Name"})
+    email = EmailField('Email', validators=[DataRequired(), Email()], render_kw={"placeholder": "Email"})
+    message = TextAreaField('Message', validators=[DataRequired()], render_kw={"placeholder": "Message"})
     submit = SubmitField('Send Message')
 
 
-@app.route('/')
+@app.route('/', methods=["POST", "GET"])
 def index():
     form = ContactForm()
     return render_template('index.html', form=form)
