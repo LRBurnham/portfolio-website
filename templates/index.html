@@ -150,6 +150,7 @@
       <h5>Alternatively you can use the form below to send me a message!</h5>
       <!-- TODO: Update form content and test functionality -->
       <form action="{{ url_for('index') }}" method="POST">
+        {{ form.csrf_token }}
         <div>{{ form.name(class="contact-input") }}</div>
         <div>{{ form.email(class="contact-input") }}</div>
         <div>{{ form.message(class="contact-input") }}</div>
