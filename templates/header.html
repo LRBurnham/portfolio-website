@@ -54,11 +54,11 @@
                   portfolio
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">portfolio overview</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('portfolio') }}">portfolio overview</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">highlight #1</a></li>
-                  <li><a class="dropdown-item" href="#">highlight #2</a></li>
-                  <li><a class="dropdown-item" href="#">highlight #3</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('portfolio')+'#portfolio-morse' }}">morse code translator</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('portfolio')+'#portfolio-highlight2' }}">highlight #2</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('portfolio')+'#portfolio-site' }}">this site</a></li>
                   <li><a class="dropdown-item" href="https://github.com/LRBurnham">my GitHub</a></li>
                 </ul>
               </li>
@@ -88,7 +88,7 @@
                 <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">portfolio</a>
+                <a class="nav-link" href="{{ url_for('portfolio') }}">portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('index')+'#about-me' }}">about me</a>

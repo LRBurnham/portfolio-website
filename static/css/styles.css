@@ -217,6 +217,15 @@ footer {
   display: table;
 }
 
+/* Portfolio Page */
+
+/* Portfolio Title Section */
+
+#portfolio-title {
+  text-align: center;
+  filter: drop-shadow(0px 0px 5px #00adB5);
+}
+
 /* Smaller Screen Layout and Styling Adjustments */
 
 @media all and (max-width: 768px) {
