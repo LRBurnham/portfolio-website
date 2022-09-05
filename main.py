@@ -30,10 +30,10 @@ class ContactForm(FlaskForm):
 
 
 class MorseForm(FlaskForm):
-    input_field = StringField('Input Field',
-                              validators=[DataRequired()],
-                              render_kw={"placeholder": "Enter the text you would like translated into Morse Code"}
-                              )
+    input_field = TextAreaField('Input Field',
+                                validators=[DataRequired()],
+                                render_kw={"placeholder": "Enter the text you would like translated into Morse Code"}
+                                )
     submit = SubmitField('Translate My Text')
 
 

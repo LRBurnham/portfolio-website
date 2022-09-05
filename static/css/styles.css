@@ -232,11 +232,21 @@ footer {
 
 /* Portfolio Page */
 
+.portfolio-section {
+  padding: 3% 0%;
+}
+
 /* Portfolio Title Section */
 
 #portfolio-title {
   text-align: center;
   filter: drop-shadow(0px 0px 5px #00adB5);
+}
+
+/* Morse Code Translator */
+
+.morse-form {
+  text-align: center;
 }
 
 /* Smaller Screen Layout and Styling Adjustments */
