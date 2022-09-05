@@ -5,6 +5,19 @@
   background-color: #222831;
 }
 
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #00adb5;
+}
+
 /* Header and Navigation */
 
 #header {
