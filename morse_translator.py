@@ -7,4 +7,4 @@ def translate(user_text):
         morse_text = " ".join(morse_chars)
         return morse_text
     except KeyError:
-        return "Please only input letters, numbers and/or spaces"
+        raise ValueError("Please only input letters, numbers and/or spaces")

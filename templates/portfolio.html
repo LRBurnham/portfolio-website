@@ -10,7 +10,18 @@
   </section>
 
   <section id = "portfolio-morse" class="lighter-section">
+    <div class="container">
 
+      <form action="{{ url_for('portfolio') }}" method="POST">
+        {{ form.csrf_token }}
+        <div>{{ form.input_field(class="contact-input") }}</div>
+        <div>{{ form.submit(class="contact-button") }}</div>
+        {% if output %}
+        {{ output }}
+        {% endif %}
+      </form>
+
+    </div>
   </section>
 
   <!-- TODO: Choose and apply a portfolio item for this section -->

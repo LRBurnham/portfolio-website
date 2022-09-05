@@ -4,6 +4,7 @@ from flask_wtf import FlaskForm
 from flask_mail import Mail, Message
 from wtforms import StringField, EmailField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
+from morse_translator import translate
 import os
 
 # TODO: create images, replace placeholders
@@ -28,24 +29,40 @@ class ContactForm(FlaskForm):
     submit = SubmitField('Send Message')
 
 
+class MorseForm(FlaskForm):
+    input_field = StringField('Input Field',
+                              validators=[DataRequired()],
+                              render_kw={"placeholder": "Enter the text you would like translated into Morse Code"}
+                              )
+    submit = SubmitField('Translate My Text')
+
+
 @app.route('/', methods=["POST", "GET"])
 def index():
-    form = ContactForm()
-    if form.validate_on_submit():
+    contact_form = ContactForm()
+    if contact_form.validate_on_submit():
         msg = Message(
-            subject=f'{form.name.data} sent you a message! Email: {form.email.data}',
+            subject=f'{contact_form.name.data} sent you a message! Email: {contact_form.email.data}',
             sender=os.environ.get('FORM_EMAIL'),
             recipients=[os.environ.get('FORM_EMAIL')]
         )
-        msg.body = form.message.data
+        msg.body = contact_form.message.data
         mail.send(msg)
         return redirect(url_for('index')+'#contact')
-    return render_template('index.html', form=form)
+    return render_template('index.html', form=contact_form)
 
 
 @app.route('/portfolio', methods=["POST", "GET"])
 def portfolio():
-    return render_template('portfolio.html')
+    morse_form = MorseForm()
+    if morse_form.validate_on_submit():
+        input_text = morse_form.input_field.data
+        try:
+            output_text = translate(input_text)
+        except ValueError as error_message:
+            output_text = str(error_message)
+        return render_template('portfolio.html', form=morse_form, output=output_text)
+    return render_template('portfolio.html', form=morse_form)
 
 
 if __name__ == "__main__":
