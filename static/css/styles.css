@@ -249,6 +249,10 @@ footer {
   text-align: center;
 }
 
+.morse-output {
+  text-align: center;
+}
+
 /* Smaller Screen Layout and Styling Adjustments */
 
 @media all and (max-width: 768px) {

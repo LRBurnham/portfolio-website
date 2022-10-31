@@ -13,6 +13,15 @@
     <div class="container-fluid">
 
       <div class="row">
+        <div class="col-sm-4">
+          <img src="{{ url_for('static', filename = 'img/200x200.jpg') }}">
+        </div>
+        <div class="col-sm-8">
+
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-sm-6 morse-form">
           <form action="{{ url_for('portfolio') }}" method="POST">
             {{ form.csrf_token }}
@@ -20,7 +29,7 @@
             <div>{{ form.submit(class="contact-button") }}</div>
           </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 morse-output">
           {% if output %}
             {{ output }}
           {% else %}
