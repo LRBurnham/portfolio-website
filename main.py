@@ -8,7 +8,7 @@ from morse_translator import translate
 import os
 
 # TODO: create images, replace placeholders
-# TODO: Implement Feedback for email successfully sent
+# TODO: implement feedback for email successfully sent
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')

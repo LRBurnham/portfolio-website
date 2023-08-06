@@ -243,6 +243,18 @@ footer {
   filter: drop-shadow(0px 0px 5px #00adB5);
 }
 
+.portfolio-item-row {
+  padding: 0% 0% 5% 0%;
+}
+
+.portfolio-item-image {
+  text-align: center;
+}
+
+.portfolio-item-text {
+  padding: 0% 5%;
+}
+
 /* Morse Code Translator */
 
 .morse-form {
